@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script >
+    function send(){
+      localStorage.setItem("player1", document.getElementById("name1").value);
+      localStorage.setItem("player2", document.getElementById("name2").value);
+      localStorage.setItem("maxScore", document.getElementById("maxScore").value);
+    }
+  </script>
+<link rel="stylesheet" href="assets/css/gamestyle.css">
+  <title>Game</title>
+</head>
+<body>
+  <div class="design">
+
+  
+
+  <form action="game.html" class="formdes">
+    
+    <input type="text" name="name1" id="name1" placeholder="ENTER PLAYER 1 NAME">
+   
+    <input type="text" name="name2" id="name2" placeholder="ENTER PLAYER 2 NAME">
+   
+    <input type="number" name="maxScore" id="maxScore" placeholder="ENTER MAX SCORE">
+    <input type="submit" id = "button" value="PLAY" onclick="send()">
+  </form>
+
+<div class="rules">
+
+    <h1>GAME RULES</h1> 
+    <ul>
+      <li>The game has 2 players, playing in rounds</li>
+      <li>In each turn, a player rolls a dice as many times as he wishes. Each result gets added to the ROUND score</li>
+      <li>But, if the player rolls a 1 in any dice all his ROUND score gets lost. After that, it's the next player's turn</li>
+      <li>If the player rolls two consecutive 6 then the player looses his entire score.</li>
+      <li>The player can choose to 'Hold', which means that his ROUND score gets added to his individual score. After that, it's the next player's turn</li>
+      <li>The first player to reach maximum points entered by you wins the game</li>
+      <li>If you did not enter any maximum points then it is set to 100</li>
+    </ul>
+
+
+   
+</div>
+</div>
+</body>
+</html>

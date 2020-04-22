@@ -1,0 +1,74 @@
+
+body {
+     background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)); 
+    background-size: cover;
+    background-position: center;
+    font-family: Lato;
+    font-weight: 300;
+    position: relative; 
+    height: 100vh;
+    color: #555;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.formdes input{
+    padding: 20px;
+    background-color: whitesmoke;
+    margin: 30px;
+}
+#button {
+    color: #555;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#button:hover { font-weight: 600; }
+ul li{
+    color: whitesmoke;
+    padding: 5px;
+    font-size: 17px;
+    font-weight: 400;
+}
+.formdes{
+
+
+    background-color: yellowgreen;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+ 
+}
+.rules{
+
+   
+    background-color: yellowgreen;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    flex-direction: column;
+    padding: 40px 3%;
+ 
+
+}
+.design{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    /* height: 100vh; */
+    padding: 100px 10%;
+}
+
+.rules ul{
+    padding: 30px 10%;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+}
+.rules h1{
+    text-align: center;
+    color: whitesmoke;
+}
